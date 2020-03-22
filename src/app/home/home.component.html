@@ -80,7 +80,7 @@
                     <div class="col-md-4" *ngFor="let component of componentList; let i = index">
                         <div class="form-group">
                             <label for="exampleInputPassword1">{{component.name}} {{ component.id}}   </label> <span style="float: right;">
-                                <i  data-toggle="modal" data-target="#exampleModalLong" (click)="clickIndex== component.id" class="fa fa-trash"></i>
+                                <i  (click)=" openModel(i) ; " class="fa fa-trash"></i>
 
                             </span>
                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="{{component.name}} {{ component.id}}">

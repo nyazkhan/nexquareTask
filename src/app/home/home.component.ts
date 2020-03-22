@@ -7,7 +7,7 @@ declare const $: any;
 })
 export class HomeComponent implements OnInit {
   componentList = [];
-  clickIndex: number;
+  clickIndex: any;
   constructor() { }
   ngOnInit() {
   }
@@ -17,11 +17,14 @@ export class HomeComponent implements OnInit {
 
   deleteComponent() {
 
-    this.componentList.splice(this.componentList.findIndex((ele) => ele.id === this.clickIndex) , 1);
-    console.log();
-    
+    console.log(this.clickIndex);
+
+    this.componentList.splice(this.clickIndex, 1);
     $('#exampleModalLong').modal('hide');
 
   }
-
+  openModel(i) {
+    this.clickIndex = i
+    $('#exampleModalLong').modal('show');
+  }
 }
