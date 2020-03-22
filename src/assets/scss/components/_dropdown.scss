@@ -1,0 +1,47 @@
+//
+// dropdown menu for sign-in user in navbar
+//
+
+.dropdown-logged {
+  margin-left: auto;
+}
+
+.dropdown-logged-toggle:before {
+  margin: rem(8) 0 0 rem(8);
+  float: right;
+  font-family: $font-awesome;
+  @include font-size($font-size);
+  content: "\f175";
+}
+
+.dropdown-logged-menu {
+  top: rem(46);
+}
+
+.dropdown-logged-item {
+  @include font-size($font-size);
+
+  .fa {
+    transition: 0.5s all;
+    padding-right: rem(10);
+    width: rem(22);
+  }
+}
+
+.dropdown-link:hover {
+  text-decoration: none;
+}
+
+.dropdown-user {
+  display: block;
+  margin: rem(8) rem(8) 0 0;
+  float: left;
+  font-weight: 600;
+  @include font-size($font-size);
+}
+
+.dropdown-avatar {
+  height: $sm-avatar;
+  width: $sm-avatar;
+  border-radius: 50%;
+}

@@ -28,9 +28,20 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/bootstrap/dist/css/bootstrap.css",
+              "./node_modules/font-awesome/css/font-awesome.css",
+              "./node_modules/open-sans-fontface/open-sans.css",
+              "./node_modules/perfect-scrollbar/css/perfect-scrollbar.css",
+              "src/assets/css/sidebar.css"
             ],
-            "scripts": []
+            "scripts": [
+             "./node_modules/jquery/dist/jquery.js",
+             "./node_modules/bootstrap/dist/js/bootstrap.bundle.js",
+             "./node_modules/perfect-scrollbar/dist/perfect-scrollbar.js",
+             "./node_modules/nanobar/nanobar.js",
+             "src/assets/js/sidebar.menu.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -124,6 +135,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "nexquare"
 }
